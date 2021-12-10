@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p th:text="'안녕 ' + ${name}">empty</p> <!-- 서버 없이 html파일만 보면 empty가 나온다. 서버로 실행하면 ${name}값으로 내용이 치환된다. -->
+</body>
+</html>
