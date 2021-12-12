@@ -40,5 +40,9 @@ public class MemoryMemberRepository implements MemberRepository {
 	}
 
 	
+	//jUnit 테스트에서 aftereach 어노테이션으로 테스트마다 저장된 실행결과를 지워주는 역할
+	public void clearStore() {
+		store.clear();
+	}
 	
 }
