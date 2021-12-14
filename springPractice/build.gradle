@@ -21,3 +21,6 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+// 2021-12-14 log4j2 치명적 사건으로 버전 2.15 이상으로 업그레이드 해야 함
+// spring-boot-starter-web은 log4j2가 아닌 logback이 기본 설정
