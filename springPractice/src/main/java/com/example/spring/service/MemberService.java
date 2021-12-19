@@ -10,12 +10,12 @@ import com.example.spring.domain.Member;
 import com.example.spring.repository.MemberRepository;
 import com.example.spring.repository.MemoryMemberRepository;
 
-@Service
+//@Service
 public class MemberService {
 	
 	private final MemberRepository memberRepository;
 	
-	@Autowired //연결 DI    memberRepository연결
+//	@Autowired //연결 DI    memberRepository연결
 	public MemberService(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
 	}
