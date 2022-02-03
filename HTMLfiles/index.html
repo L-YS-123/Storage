@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -35,30 +34,21 @@
 
     <title>인덱스</title>
 </head>
-
-
-
-
-
-
 <body>
     <!--로고아이콘, 검색바, 로그인, 회원가입 영역-->
-    <div class="container-fluid row" style="margin-top: 100px; margin-bottom: 50px;">
-        <div class="col-md-3">
-            <i class="fab fa-java"></i>
-        </div>
-        <div class="col-md-6">
-            <form class="d-flex" action="" method="POST">
-                <input class="form-control me-4" type="search" placeholder="검색" aria-label="Search">
-                <button class="btn btn-secondary me-2" type="submit">Search</button>
-            </form>
-        </div>
-        <div class="col-md-3">
-            <form action="" method="GET">
-                <a style="float: right;">
-                    <button type="button" class="btn btn-secondary"">로그인</button>
-                </a>
-            </form>
+    <div class="container" style="margin-top: 100px; margin-bottom: 50px;"> <!--container: 반응형, container-fluid: width==100%-->
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form class="d-flex" action="" method="POST">
+                    <input class="form-control me-4" type="search" placeholder="검색" aria-label="Search">
+                    <button class="btn btn-secondary me-2" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-2">
+                <form action="" method="GET">
+                        <button type="button" class="btn btn-secondary">로그인</button>
+                </form>
+            </div>
         </div>
     </div>
     <!--네비게이션 영역-->
@@ -77,7 +67,7 @@
                         <a class="nav-link active" href="article.html">게시글</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">커뮤니티</a>
+                        <a class="nav-link active" href="community.html">커뮤니티</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +81,7 @@
 
    <!-- footer영역 -->
     <footer>
-        Contact: yoonsunglee12345@gmail.com
+        Contact: idforjob0318@gmail.com
     </footer>
 
 </body>
