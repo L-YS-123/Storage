@@ -51,34 +51,45 @@
         </div>
     </nav>
     <!--본문 영역-->
-    <article class="container" style="margin-top: 100px; width: 30%;">
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">아이디</label>
-              <input type="text" class="form-control">
+    <article class="container" style="margin-top: 100px; width: 40%;">
+        <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="userId">아이디</span>
+                <input type="text" class="form-control" placeholder="아이디를 입력해주세요" aria-label="Id" aria-describedby="userId">
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">비밀번호</label>
-              <input type="password" class="form-control">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="userPw">비밀번호</span>
+                <input type="text" class="form-control" placeholder="비밀번호를 입력해주세요" aria-label="Pw" aria-describedby="userPw">
             </div>
-            <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="remeberId">
-            <label class="form-check-label" for="rememberId">아이디 기억하기</label>
+            <div class="input-group mb-5">
+                <span class="input-group-text" id="userPwReconfirm">비밀번호 확인</span>
+                <input type="text" class="form-control" placeholder="비밀번호를 다시 한 번 입력해주세요" aria-label="PwReConfirm" aria-describedby="userPwReconfirm">
             </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary" style="width: 100%;">로그인</button>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="userEmail">이메일</span>
+                <input type="text" class="form-control" placeholder="사용하시는 이메일 주소를 적어주세요" aria-label="email" aria-describedby="userEmail">
+            </div>
+            <label >비밀번호 분실 시 사용할 질문을 고르세요</label>
+            <div class="input-group mb-3 mt-2">
+                <label class="input-group-text" for="questions">질문</label>
+                <select class="form-select" id="questions">
+                  <option selected>자신의 고향은?</option>
+                  <option value="1">내가 가장 아끼는 물건</option>
+                  <option value="2">출신 초등학교의 이름</option>
+                  <option value="3">인상 깊게 읽은 책의 이름은?</option>
+                  <option value="4">내가 좋아하는 캐릭터는?</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text" id="answer">답변</span>
+                <input type="text" class="form-control" aria-label="ans" aria-describedby="answer">
+            </div>
+            <div class="input-group mt-5 mb-5 pt-5 pb-5">
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 100%;">회원가입</button>
             </div>
         </form>
-        <div class="mb-3">
-            <a href="register.html">
-                <button class="btn btn-outline-primary" style="width: 100%; margin-bottom: 20px;">회원가입</button>
-            </a>
-        </div>
-          <button class="btn btn-info mb-2" style="width: 100%; color: white;">구글 로그인</button>
-          <button class="btn btn-success mb-2" style="width: 100%;">네이버 로그인</button>
-          <button class="btn btn-warning mb-2" style="width: 100%; color: white;">카카오 로그인</button>
     </article>
-    <!-- footer영역 -->
+    <!-- footer영역-->
     <hr style="margin-top: 100px;">
     <footer class="container" style="margin-bottom: 20px;">
         <div style="text-align: center;">Contact: idforjob0318@gmail.com</div>
