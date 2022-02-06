@@ -56,35 +56,19 @@
     </nav>
     <!--본문 영역-->
     <article class="container" style="margin-top: 100px; width: 30%;">
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">아이디</label>
-              <input type="text" class="form-control">
+        <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="findUserName">이름</span>
+                <input type="text" class="form-control" placeholder="가입된 이름을 적어주세요" id="name_findId">
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">비밀번호</label>
-              <input type="password" class="form-control">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="findUserEmail_id">이메일</span>
+                <input type="text" class="form-control" placeholder="가입된 이메일 주소를 적어주세요" id="email_findId">
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="remeberId">
-                <label class="form-check-label" for="rememberId">아이디 기억하기</label>
-            </div>
-            <div class="mb-3 text-end">
-                <a href="findId.html">아아디 찾기</a>
-                <a href="findPw.html" class="ps-2">비밀번호 찾기</a>
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary" style="width: 100%;">로그인</button>
+            <div class="input-group mt-5 mb-5 pt-5 pb-5">
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 100%;">아이디 찾기</button>
             </div>
         </form>
-        <div class="mb-3">
-            <a href="register.html">
-                <button class="btn btn-outline-primary" style="width: 100%; margin-bottom: 20px;">회원가입</button>
-            </a>
-        </div>
-          <button class="btn btn-info mb-2" style="width: 100%; color: white;">구글 로그인</button>
-          <button class="btn btn-success mb-2" style="width: 100%;">네이버 로그인</button>
-          <button class="btn btn-warning mb-2" style="width: 100%; color: white;">카카오 로그인</button>
     </article>
     <!-- footer영역 -->
     <hr style="margin-top: 100px;">
