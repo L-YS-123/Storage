@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- fontawesome kit-->
+    <script src="https://kit.fontawesome.com/24047c4e66.js" crossorigin="anonymous"></script>
+    <title>아티클</title>
+</head>
+<body>
+    <!--로고아이콘, 검색바, 로그인, 회원가입 영역-->
+    <div class="container" style="margin-top: 100px; margin-bottom: 50px;"> <!--container: 반응형, container-fluid: width==100%-->
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form class="d-flex" action="" method="POST">
+                    <select class="form-control me-2" name="searchCategory" id="ctgr" placeholder="카테고리" style="width: 20%">
+                        <option value="posting">포스트</option>
+                        <option value="community">커뮤니티</option>
+                    </select>
+                    <input class="form-control me-4" type="search" placeholder="검색" aria-label="Search">
+                    <button class="btn btn-secondary me-2" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-2">
+                <a href="loginPage.html">
+                    <button type="button" class="btn btn-secondary">로그인</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--네비게이션 영역-->
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">블로그</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Cover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="article.html">포스트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="community.html">커뮤니티</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--본문 영역-->
+    <article class="container" style="margin-top: 100px; width: 30%;">
+        <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="findUserId">아이디</span>
+                <input type="text" class="form-control" placeholder="아이디를 적어주세요" id="id_findPw">
+            </div>
+            <!--비번찾기 질문을 어떻게 구체화 할지 생각해보자(비번찾기 )-->
+            <!-- 질문을 고정하려면 아이디를 확인하는 과정을 먼저 거처야 한다 -->
+            *가입시 선택했던 질문을 고르세요    
+            <div class="input-group mb-3 mt-2">
+                <label class="input-group-text" for="questions">질문</label>
+                <select class="form-select" id="questions">
+                  <option value="qnaHome">자신의 고향은?</option>
+                  <option value="qnaThing">내가 가장 아끼는 물건</option>
+                  <option value="qnaSchlName">출신 초등학교의 이름</option>
+                  <option value="qnaFvrBook">인상 깊게 읽은 책의 이름은?</option>
+                  <option value="qnaFvrChr">내가 좋아하는 캐릭터는?</option>
+                </select>
+            </div>
+            *질문에 대한 답을 입력하세요
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="">답변</span>
+                <input type="text" class="form-control" placeholder="답변을 입력하세요" id="ans_findPw">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="findUserEmail_pw">이메일</span>
+                <input type="text" class="form-control" placeholder="가입된 이메일 주소를 적어주세요" id="email_findPw">
+            </div>
+            <div class="input-group mt-5 mb-5 pt-5 pb-5">
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 100%;">비밀번호 찾기</button>
+            </div>
+        </form>
+    </article>
+    <!-- footer영역 -->
+    <hr style="margin-top: 100px;">
+    <footer class="container" style="margin-bottom: 20px;">
+        <div style="text-align: center;">Contact: idforjob0318@gmail.com</div>
+    </footer>
+ 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+
+
+
+
+</html>
